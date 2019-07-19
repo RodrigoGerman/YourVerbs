@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE3EB"
+    tools:context=".PracticeWords">
+
+    <TextView
+        android:id="@+id/title_1"
+        android:layout_width="144dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="21dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/title_infinitivo"
+        android:textAlignment="textStart"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/infinitivo"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="64dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@id/title_1" />
+
+    <TextView
+        android:id="@+id/title_2"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="117dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/title_simple_past"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/simple_past"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="165dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/title_3"
+        android:layout_width="179dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="222dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/participle_past"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/participle_past"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="277dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/title_4"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="336dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/title_traduction"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/traduction"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="385dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="141dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/traduction"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="38dp"
+        android:onClick="setClear"
+        android:text="@string/title_clear" />
+
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="141dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/traduction"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="38dp"
+        android:onClick="checkVerb"
+        android:text="@string/title_check" />
+
+    <Button
+        android:id="@+id/button_suffle"
+        android:layout_width="141dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/traduction"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="117dp"
+        android:onClick="practiceNewVerb"
+        android:text="@string/suffle" />
+
+</RelativeLayout>
